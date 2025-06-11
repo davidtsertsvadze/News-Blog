@@ -1,11 +1,19 @@
 @import url('https://fonts.cdnfonts.com/css/english-towne');
 @import "tailwindcss";
 
+:root {
+  --color-primary: #181717;
+  --color-secondary: #AB0909;
+  --color-vivid-blue: #0930F9;
+  --color-fresh-green: #559B3C;
+  --color-sky-blue: #0193DE;
+  --color-earthstone: #453838;
+}
+
 #root {
-  max-width: 1440px;
   margin: 0 auto;
-  padding: 20px;
   text-align: center;
+  max-width: 1400px;
 }
 .font-english-towne {
   font-family: 'English Towne', sans-serif;

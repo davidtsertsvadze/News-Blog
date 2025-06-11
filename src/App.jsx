@@ -9,14 +9,9 @@ function App() {
 
   return (
     <>
-     
-      <div class="border-2 border-[#181717] w-[87.5rem]!">
-       <Header></Header>
-        
+      <div class="max-w-[1400px] mx-auto border-2 border-[#181717] text-center mt-5">
+        <Header /> 
       </div>
-      
-      
-      
     </>
   )
 }
