@@ -5,7 +5,7 @@ function Header() {
         <header class="w-full">
             <div>
                 <h1 class="text-5xl font-medium font-english-towne text-[color:var(--color-secondary)] py-6">The Honest Stories Teller</h1>
-                <nav class="flex items-center justify-center border-y-2 border-[#181717] py-4">
+                <nav class="flex items-center justify-center border-y-2 border-[color:var(--color-primary)] py-4">
                     <div class="w-[50rem] flex justify-between">
                         <a href="#news" class="text-xs text-black font-black uppercase">NEWS</a>
                         <a href="#world" class="text-xs text-black font-black uppercase">world</a>
