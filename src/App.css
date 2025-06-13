@@ -1,4 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/english-towne');
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Vollkorn");
 @import "tailwindcss";
 
 :root {
@@ -9,6 +11,8 @@
   --color-sky-blue: #0193DE;
   --color-earthstone: #453838;
   --color-black500: #18171D;
+  --color-vividRed: #CA2222;
+  --color-black300:  #878787;
 }
 
 #root {
@@ -18,4 +22,11 @@
 }
 .font-english-towne {
   font-family: 'English Towne', sans-serif;
+}
+.font-anton {
+  font-family: 'Anton', sans-serif;
+}
+
+.font-vollkorn {
+  font-family: 'Vollkorn', sans-serif;
 }
