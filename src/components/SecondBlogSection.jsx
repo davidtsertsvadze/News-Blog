@@ -40,7 +40,7 @@ function SecondBlogSection() {
 
       {/* Left Column */}
       {firstPost && (
-        <div className="w-1/3 p-5">
+        <div className="w-2/5 p-5">
             <div>
                 <div className="border-b border-dotted border-[color:var(--color-primary)] pb-6">
                     <div className="flex items-center mb-3">
@@ -243,10 +243,10 @@ function SecondBlogSection() {
 
       {/* Midle Column */}
       {secondPost && (
-        <div className="w-1/3 p-5">
+        <div className="flex-1 p-5">
           <div className="pb-5">
             <img
-              className="aspect-[324/243] mb-5"
+              className="aspect-[324/243] w-[442px] mb-5"
               src={secondPost._embedded?.["wp:featuredmedia"]?.[0]?.source_url || ""}
               alt={secondPost.title.rendered}
             />
@@ -405,7 +405,7 @@ function SecondBlogSection() {
 
       {/* Right Column */}
       {secondPost && (
-        <div className="w-1/3 p-5">
+        <div className="w-1/4 p-5">
           <img
             className="aspect-[324/243] w-[324px] mb-5"
             src={secondPost._embedded?.["wp:featuredmedia"]?.[0]?.source_url || ""}

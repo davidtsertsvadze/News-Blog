@@ -31,7 +31,7 @@ function FirstBlogSection() {
       {firstPost && (
         <div className="w-3/4 p-5 flex flex-row">
           <img
-            className="aspect-[530/400] w-[530px]"
+            className="aspect-[530/400] w-[538px]"
             src={firstPost._embedded?.["wp:featuredmedia"]?.[0]?.source_url || ""}
             alt={firstPost.title.rendered}
           />
