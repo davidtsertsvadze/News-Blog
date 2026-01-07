@@ -188,7 +188,7 @@ function SecondBlogSection() {
                 </div>
                 <div>
                     <div className="flex items-center mb-3">
-                    <div className="w-2 h-2 bg-[color:var(--color-vividRed)]"></div>
+                    <div className="w-2 h-2 bg-[color:var(--color-black300)]"></div>
                     <span className="text-[color:var(--color-black300)] text-xs font-black pl-2">
                         {getCategoryName(firstPost)}
                     </span>
@@ -204,7 +204,7 @@ function SecondBlogSection() {
                 </div>
                 <div>
                     <div className="flex items-center mb-3">
-                    <div className="w-2 h-2 bg-[color:var(--color-vividRed)]"></div>
+                    <div className="w-2 h-2 bg-[color:var(--color-vivid-blue)]"></div>
                     <span className="text-[color:var(--color-black300)] text-xs font-black pl-2">
                         {getCategoryName(firstPost)}
                     </span>
@@ -220,7 +220,7 @@ function SecondBlogSection() {
                 </div>
                 <div>
                     <div className="flex items-center mb-3">
-                    <div className="w-2 h-2 bg-[color:var(--color-vividRed)]"></div>
+                    <div className="w-2 h-2 bg-[color:var(--color-vivid-blue)]"></div>
                     <span className="text-[color:var(--color-black300)] text-xs font-black pl-2">
                         {getCategoryName(firstPost)}
                     </span>
@@ -277,7 +277,7 @@ function SecondBlogSection() {
               
               <div className="w-1/2">
                 <div className="flex items-center mb-3">
-                  <div className="w-2 h-2 bg-[color:var(--color-amber-orange)]"></div>
+                  <div className="w-2 h-2 bg-[color:var(--color-vividRed)]"></div>
                   <span className="text-[color:var(--color-black300)] text-xs font-black pl-2">
                     {getCategoryName(secondPost)}
                   </span>
@@ -303,7 +303,7 @@ function SecondBlogSection() {
               
               <div className="w-1/2">
                 <div className="flex items-center mb-3">
-                  <div className="w-2 h-2 bg-[color:var(--color-amber-orange)]"></div>
+                  <div className="w-2 h-2 bg-[color:var(--color-vivid-blue)]"></div>
                   <span className="text-[color:var(--color-black300)] text-xs font-black pl-2">
                     {getCategoryName(secondPost)}
                   </span>
@@ -329,7 +329,7 @@ function SecondBlogSection() {
               
               <div className="w-1/2">
                 <div className="flex items-center mb-3">
-                  <div className="w-2 h-2 bg-[color:var(--color-amber-orange)]"></div>
+                  <div className="w-2 h-2 bg-[color:var(--color-fresh-green)]"></div>
                   <span className="text-[color:var(--color-black300)] text-xs font-black pl-2">
                     {getCategoryName(secondPost)}
                   </span>
@@ -355,7 +355,7 @@ function SecondBlogSection() {
               
               <div className="w-1/2">
                 <div className="flex items-center mb-3">
-                  <div className="w-2 h-2 bg-[color:var(--color-amber-orange)]"></div>
+                  <div className="w-2 h-2 bg-[color:var(--color-sky-blue)]"></div>
                   <span className="text-[color:var(--color-black300)] text-xs font-black pl-2">
                     {getCategoryName(secondPost)}
                   </span>
@@ -370,7 +370,7 @@ function SecondBlogSection() {
                     </span> 
               </div>
             </div> 
-            <div className="border-t border-dotted border-[color:var(--color-primary)] py-5 flex flex-row">
+            <div className="border-t border-dotted border-[color:var(--color-primary)] pt-5 flex flex-row">
               <div className="w-1/2 mr-5">
                 <img
                   className="aspect-[324/243]"
@@ -381,7 +381,7 @@ function SecondBlogSection() {
               
               <div className="w-1/2">
                 <div className="flex items-center mb-3">
-                  <div className="w-2 h-2 bg-[color:var(--color-amber-orange)]"></div>
+                  <div className="w-2 h-2 bg-[color:var(--color-sky-blue)]"></div>
                   <span className="text-[color:var(--color-black300)] text-xs font-black pl-2">
                     {getCategoryName(secondPost)}
                   </span>
@@ -406,24 +406,127 @@ function SecondBlogSection() {
       {/* Right Column */}
       {secondPost && (
         <div className="w-1/4 p-5">
-          <img
-            className="aspect-[324/243] w-[324px] mb-5"
-            src={secondPost._embedded?.["wp:featuredmedia"]?.[0]?.source_url || ""}
-            alt={secondPost.title.rendered}
-          />
+            <div>
+              <div className="border border-black py-5 px-16">
+                <img
+                    className="aspect-[335/255] w-[335px]"
+                    src={secondPost._embedded?.["wp:featuredmedia"]?.[0]?.source_url || ""}
+                    alt={secondPost.title.rendered}
+                  />
+              </div>
+              <div>
+                <div className="border-b border-dotted border-[color:var(--color-primary)] py-5 flex flex-row">
+                <div className="mr-5">
+                  <img
+                    className="aspect-[49/49] w-[49px] rounded-full"
+                    src={secondPost._embedded?.["wp:featuredmedia"]?.[0]?.source_url || ""}
+                    alt={secondPost.title.rendered}
+                  />
+                </div>
+                
+                <div>
+                <div className="flex items-center">
+                  <span className="text-[color:var(--color-black300)] text-xs font-black font-anton">
+                    Josephine Wolf
+                  </span>
+                </div>
 
-          <div>
-            <div className="flex items-center mb-3">
-              <div className="w-2 h-2 bg-[color:var(--color-vividRed)]"></div>
-              <span className="text-[color:var(--color-black300)] text-xs font-black pl-2">
-                {getCategoryName(secondPost)}
-              </span>
+                <h4
+                  className="text-[color:var(--color-black500)] text-lg text-left leading-none font-normal font-anton"
+                  dangerouslySetInnerHTML={{ __html: secondPost.title.rendered }}
+                />
+                <span className="block text-[color:var(--color-black300)] text-sm text-left font-vollkorn mt-[4px]">
+                        {formatDate(firstPost.date)}
+                </span> 
+              </div>
+            </div> 
+
+            <div className="border-b border-dotted border-[color:var(--color-primary)] py-5 flex flex-row">
+              <div className="mr-5">
+                <img
+                  className="aspect-[49/49] w-[49px] rounded-full"
+                  src={secondPost._embedded?.["wp:featuredmedia"]?.[0]?.source_url || ""}
+                  alt={secondPost.title.rendered}
+                 />
+              </div>
+              
+              <div>
+                <div className="flex items-center">
+                  <span className="text-[color:var(--color-black300)] text-xs font-black font-anton">
+                    Josephine Wolf
+                  </span>
+                </div>
+
+                <h4
+                  className="text-[color:var(--color-black500)] text-lg text-left leading-none font-normal font-anton"
+                  dangerouslySetInnerHTML={{ __html: secondPost.title.rendered }}
+                />
+                <span className="block text-[color:var(--color-black300)] text-sm text-left font-vollkorn mt-[4px]">
+                        {formatDate(firstPost.date)}
+                </span> 
+              </div>
+            </div> 
+            
+            <div className="border-b border-dotted border-[color:var(--color-primary)] py-5 flex flex-row">
+              <div className="mr-5">
+                <img
+                  className="aspect-[49/49] w-[49px] rounded-full"
+                  src={secondPost._embedded?.["wp:featuredmedia"]?.[0]?.source_url || ""}
+                  alt={secondPost.title.rendered}
+                 />
+              </div>
+              
+              <div>
+                <div className="flex items-center">
+                  <span className="text-[color:var(--color-black300)] text-xs font-black font-anton">
+                    Josephine Wolf
+                  </span>
+                </div>
+
+                <h4
+                  className="text-[color:var(--color-black500)] text-lg text-left leading-none font-normal font-anton"
+                  dangerouslySetInnerHTML={{ __html: secondPost.title.rendered }}
+                />
+                <span className="block text-[color:var(--color-black300)] text-sm text-left font-vollkorn mt-[4px]">
+                        {formatDate(firstPost.date)}
+                </span> 
+              </div>
+            </div> 
+
+            <div className="border-b border-dotted border-[color:var(--color-primary)] py-5 flex flex-row">
+              <div className="mr-5">
+                <img
+                  className="aspect-[49/49] w-[49px] rounded-full"
+                  src={secondPost._embedded?.["wp:featuredmedia"]?.[0]?.source_url || ""}
+                  alt={secondPost.title.rendered}
+                 />
+              </div>
+              
+              <div>
+                <div className="flex items-center">
+                  <span className="text-[color:var(--color-black300)] text-xs font-black font-anton">
+                    Josephine Wolf
+                  </span>
+                </div>
+
+                <h4
+                  className="text-[color:var(--color-black500)] text-lg text-left leading-none font-normal font-anton"
+                  dangerouslySetInnerHTML={{ __html: secondPost.title.rendered }}
+                />
+                <span className="block text-[color:var(--color-black300)] text-sm text-left font-vollkorn mt-[4px]">
+                        {formatDate(firstPost.date)}
+                </span> 
+              </div>
+            </div> 
+
+            <div className="mt-8">
+                <img
+                    className="aspect-[324/397] w-[324px]"
+                    src={secondPost._embedded?.["wp:featuredmedia"]?.[0]?.source_url || ""}
+                    alt={secondPost.title.rendered}
+                  />
             </div>
-
-            <h3
-              className="text-[color:var(--color-black500)] text-3xl text-left font-normal font-anton"
-              dangerouslySetInnerHTML={{ __html: secondPost.title.rendered }}
-            />
+            </div>
           </div>
         </div>
       )}
