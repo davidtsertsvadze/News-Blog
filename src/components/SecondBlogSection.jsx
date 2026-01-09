@@ -67,10 +67,10 @@ function SecondBlogSection() {
             <div className="grid grid-cols-2 gap-5 mt-5">
                 <div>
                     <div className="flex items-center mb-3">
-                    <div className="w-2 h-2 bg-[color:var(--color-vividRed)]"></div>
-                    <span className="text-[color:var(--color-black300)] text-xs font-black pl-2">
-                        {getCategoryName(firstPost)}
-                    </span>
+                      <div className="w-2 h-2 bg-[color:var(--color-vividRed)]"></div>
+                      <span className="text-[color:var(--color-black300)] text-xs font-black pl-2">
+                          {getCategoryName(firstPost)}
+                      </span>
                     </div>
 
                     <h3
