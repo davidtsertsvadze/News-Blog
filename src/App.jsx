@@ -6,6 +6,7 @@ import Header from './components/Header.jsx'
 import FirstBlogSection from './components/FirstBlogSection.jsx'
 import SecondBlogSection from './components/SecondBlogSection.jsx'
 import ThirdBlogSection from './components/ThirdBlogSection.jsx'
+import FourthBlogSection from './components/FourthBlogSection.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,6 +18,7 @@ function App() {
         <FirstBlogSection />
         <SecondBlogSection />
         <ThirdBlogSection />
+        <FourthBlogSection />
       </div>
     </>
   )
